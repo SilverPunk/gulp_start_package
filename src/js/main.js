@@ -1,22 +1,41 @@
-// Импортируем jQuery
-//= ../../node_modules/jquery/dist/jquery.js
+// let main = $(".counter_main .counter_numbers");
+// console.log(main);
 
-// Импортируем Popper
-//= ../../node_modules/popper.js/dist/umd/popper.js
+// function calcCount() {
+//     for (var i = 0; i < $('.countings').length; i++) {
+//         var end = $('.countings').eq(i).text();
+//         countStart(end, i);
+//     }
+// }
+//
+// function countStart(end, i) {
+//     var start = 0;
+//     var interval = setInterval(function () {
+//         $('.countings').eq(i).text(++start);
+//         if (start == end) {
+//             clearInterval(interval);
+//         }
+//     }, 0.5);//скорость менять вот-тута
+// }
+// calcCount();
 
-// Импортируем необходимые js-файлы Bootstrap 4
-//= ../../node_modules/bootstrap/js/dist/util.js
-//= ../../node_modules/bootstrap/js/dist/alert.js
-//= ../../node_modules/bootstrap/js/dist/button.js
-//= ../../node_modules/bootstrap/js/dist/carousel.js
-//= ../../node_modules/bootstrap/js/dist/collapse.js
-//= ../../node_modules/bootstrap/js/dist/dropdown.js
-//= ../../node_modules/bootstrap/js/dist/modal.js
-//= ../../node_modules/bootstrap/js/dist/tooltip.js
-//= ../../node_modules/bootstrap/js/dist/popover.js
-//= ../../node_modules/bootstrap/js/dist/scrollspy.js
-//= ../../node_modules/bootstrap/js/dist/tab.js
-//= ../../node_modules/bootstrap/js/dist/toast.js
-
-// Импортируем другие js-файлы
-//= my.js
+// $(document).ready(function(){
+//     var $element = $('.countings');
+//     let counter = 0;
+//     $(window).scroll(function() {
+//         var scroll = $(window).scrollTop() + $(window).height();
+//         //Если скролл до конца елемента
+//         var offset = $element.offset().top + $element.height();
+//         //Если скролл до начала елемента
+//         // var offset = $element.offset().top
+//
+//         if (scroll > offset && counter == 0) {
+//             $('#block').fadeIn(500);
+//             counter = 1;
+//         }
+//     });
+//     // $('.btn').click(function(){
+//     //     $('#block').slideUp();
+//     // });
+//
+// });
